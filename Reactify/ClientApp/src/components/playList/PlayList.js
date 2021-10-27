@@ -1,7 +1,6 @@
 ﻿import '../../custom.css';
 import './PlayList.css';
 import MusicPlayer from "../musicPlayer/MusicPlayer";
-import { useHistory } from 'react-router-dom';
 
 
 import React, { useEffect, useState } from "react";
@@ -10,17 +9,10 @@ import React, { useEffect, useState } from "react";
 const PlayList = () => {
 
     const [playList, setPlayList] = useState([]);
-    const [isLikedSong, setIsLikedSong] = useState(false);
+    
     const [foundUser, setFoundUser] = useState(false);
    
 
-    //const LikeSong = () => {
-    //    console.log("likeMusic");
-    //    if (isLikedSong) setIsLikedSong(false);
-    //    else {
-    //        setIsLikedSong(true);
-    //    }
-    //};
 
 
     const playMusic = (event) => {

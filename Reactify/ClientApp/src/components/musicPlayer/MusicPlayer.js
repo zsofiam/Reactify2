@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from 'react';
 import './MusicPlayer.css';
 import Player from './Player.js';
-import { useLocation } from "react-router-dom";
+
 
 const MusicPlayer = (detail) => {
     const [songs, setSongs] = useState({});
