@@ -13,8 +13,8 @@ const Footer = () => {
                             <a
                                 href="https://instagram.com/"
                                 target='_blank'
+                                rel="noopener noreferrer"
                                 aria-label='Instagram'
-                                rel="noreferrer"
                             > <i class="fas fa-headset"></i>
 
                             </a>
@@ -25,8 +25,9 @@ const Footer = () => {
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/"
-                                   aria-label='Facebook'
-                                   rel="noreferrer" target="_blank"
+                                    aria-label='Facebook'
+                                    rel="noopener noreferrer"
+                                    target="_blank"
                                 >
                                     <i className='fab fa-facebook-f'/>
                                 </a>
@@ -35,7 +36,7 @@ const Footer = () => {
                                 <a href="https://instagram.com/"
                                    target='_blank'
                                    aria-label='Instagram'
-                                   rel="noreferrer"
+                                   rel="noopener noreferrer"
                                 >
                                     <i className='fab fa-instagram'/>
                                 </a>
@@ -44,7 +45,7 @@ const Footer = () => {
                                 <a href="https://www.youtube.com/"
                                    target='_blank'
                                    aria-label='Youtube'
-                                   rel="noreferrer"
+                                   rel="noopener noreferrer"
                                 >
                                     <i className='fab fa-youtube'/>
                                 </a>
@@ -53,7 +54,7 @@ const Footer = () => {
                                 <a href="https://www.twitter.com/"
                                    target='_blank'
                                    aria-label='Youtube'
-                                   rel="noreferrer"
+                                   rel="noopener noreferrer"
                                 >
                                     <i className='fab fa-twitter'/>
                                 </a>

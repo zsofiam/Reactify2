@@ -9,7 +9,7 @@ const MusicPlayer = (detail) => {
 
     const [currentSongIndex, setCurrentSongIndex] = useState(0);
     const [nextSongIndex, setNextSongIndex] = useState(currentSongIndex + 1);
-    const location = useLocation();
+    
     const [isAlbumReady, setIsAlbumReady] = useState(false);
 
     useEffect(() => {
@@ -34,7 +34,7 @@ const MusicPlayer = (detail) => {
                 return currentSongIndex + 1;
             }
         })
-    }, [currentSongIndex]);
+    }, [currentSongIndex, songs.length]);
 
     return (
         <div className="MusicPlayer" data-testid="music-player">
