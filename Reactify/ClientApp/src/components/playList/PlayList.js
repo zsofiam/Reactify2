@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom';
 
 
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 
 
 const PlayList = () => {
@@ -13,15 +12,15 @@ const PlayList = () => {
     const [playList, setPlayList] = useState([]);
     const [isLikedSong, setIsLikedSong] = useState(false);
     const [foundUser, setFoundUser] = useState(false);
-    const history = useHistory();
+   
 
-    const LikeSong = () => {
-        console.log("likeMusic");
-        if (isLikedSong) setIsLikedSong(false);
-        else {
-            setIsLikedSong(true);
-        }
-    };
+    //const LikeSong = () => {
+    //    console.log("likeMusic");
+    //    if (isLikedSong) setIsLikedSong(false);
+    //    else {
+    //        setIsLikedSong(true);
+    //    }
+    //};
 
 
     const playMusic = (event) => {
