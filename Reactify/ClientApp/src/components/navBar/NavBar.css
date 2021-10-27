@@ -1,37 +1,43 @@
-﻿.topnav {
+﻿﻿.topnav {
     overflow: hidden;
     background-color: transparent;
 }
 
-.topnav a, .topnav .search-button {
+.topnav a {
+    text-decoration: none;
+    color: white;
+    /*        text-shadow: 0 0 10px white;*/
+}
+
+.topnav a, .search-button {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     font-size: 18px;
     font-family: inherit;
     font-weight: bold;
-
-    color: white;
-    /*        text-shadow: 0 0 10px white;*/
 }
 
-    .topnav a:hover, .topnav .search-button:hover {
+.search-button {
+    background-color: transparent;
+    border: none;
+}
+
+    .topnav a:hover, .search-button:hover {
         /* background-color: #ddd;*/
         color: rebeccapurple;
         text-shadow: 0 0 30px white;
     }
 
-    .topnav a.active, .topnav .search-button.active {
-        background-color: #04AA6D;
-        color: white;
-    }
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
 
 .topnav .icon {
     display: none;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -50,72 +56,72 @@
         position: relative;
     }
 
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
 
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
 }
 
 .topnav .search-container {
     float: right;
 }
 
-.topnav .search-container input[type=text] {
-    /*   padding: 6px;
+    .topnav .search-container input[type=text] {
+        /*   padding: 6px;
 margin-top: 8px;
 font-size: 17px;
 border: none;*/
 
-    margin-top: 8px;
-    padding: 6px;
-    width: 80px;
-    height: 80px;
-    background: none;
-    border: 4px solid #ffd52d;
-    border-radius: 50px;
-    box-sizing: border-box;
-    font-family: Comic Sans MS;
-    font-size: 26px;
-    color: #ffd52d;
-    outline: none;
-    transition: .5s;
-}
+        margin-top: 8px;
+        padding: 6px;
+        width: 80px;
+        height: 80px;
+        background: none;
+        border: 4px solid #ffd52d;
+        border-radius: 50px;
+        box-sizing: border-box;
+        font-family: Comic Sans MS;
+        font-size: 26px;
+        color: #ffd52d;
+        outline: none;
+        transition: .5s;
+    }
 
 
-.topnav .search-container input[type=text]:hover {
-    width: 350px;
-    background: white;
-    border-radius: 10px;
-}
+        .topnav .search-container input[type=text]:hover {
+            width: 350px;
+            background: white;
+            border-radius: 10px;
+        }
 
 
-.topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: transparent;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    width: 80px;
-    height: 80px;
-}
+    .topnav .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: transparent;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        width: 80px;
+        height: 80px;
+    }
 
-.topnav .search-container button i {
-    color: #ffd52d;
-}
+        .topnav .search-container button i {
+            color: #ffd52d;
+        }
 
-.topnav .search-container button:hover i {
-    color: #ffd52d;
-}
+        .topnav .search-container button:hover i {
+            color: #ffd52d;
+        }
 
 @media screen and (max-width: 600px) {
     .topnav .search-container {
